@@ -1,0 +1,27 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>io.github.ecsoya</groupId>
+		<artifactId>java-uploader</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>java-uploader-aliyun</artifactId>
+	<name>java-uploader-aliyun</name>
+	<description>Java Uploader by Using Aliyun</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>io.github.ecsoya</groupId>
+			<artifactId>java-uploader-common</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<!-- 阿里云OSS -->
+		<dependency>
+			<groupId>com.aliyun.oss</groupId>
+			<artifactId>aliyun-sdk-oss</artifactId>
+			<version>3.8.0</version>
+		</dependency>
+	</dependencies>
+</project>

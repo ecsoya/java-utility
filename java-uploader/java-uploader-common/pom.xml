@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>io.github.ecsoya</groupId>
+		<artifactId>java-uploader</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>java-uploader-common</artifactId>
+	<name>java-uploader-common</name>
+
+	<properties>
+		<commons.io.version>2.6</commons.io.version>
+		<commons.fileupload.version>1.4</commons.fileupload.version>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>${commons.fileupload.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>5.2.5.RELEASE</version>
+			<scope>compile</scope>
+		</dependency>
+	</dependencies>
+
+</project>
