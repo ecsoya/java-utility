@@ -31,7 +31,7 @@ public class AliyunFileUploader extends AbstractFileUploader {
 		List<String> result = new ArrayList<>();
 		try {
 			for (UploadData file : files) {
-				String fileName = file.getFileName();
+				String fileName = getFileName(file);
 				String contentType = file.getContentType();
 				Long length = file.getLength();
 				InputStream inputStream = file.getInputStream();

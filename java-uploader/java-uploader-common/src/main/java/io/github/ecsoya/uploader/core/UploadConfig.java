@@ -13,6 +13,8 @@ public class UploadConfig {
 
 	private String bucket;
 
+	private boolean addDatePath = true;
+
 	public String getBaseUrl() {
 		return baseUrl;
 	}
@@ -55,6 +57,15 @@ public class UploadConfig {
 
 	public UploadConfig setBucket(String bucket) {
 		this.bucket = bucket;
+		return this;
+	}
+
+	public boolean isAddDatePath() {
+		return addDatePath;
+	}
+
+	public UploadConfig setAddDatePath(boolean addDatePath) {
+		this.addDatePath = addDatePath;
 		return this;
 	}
 

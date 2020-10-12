@@ -42,12 +42,17 @@ public abstract class AbstractFileUploader implements FileUploader {
 		if (StringUtils.isEmpty(fileName)) {
 			fileName = Long.toString(System.nanoTime());
 		}
-		String name = datePath() + "/" + encodingFilename(fileName);
+		String name = null;
+		if (config.isAddDatePath()) {
+			name = datePath() + "/" + encodingFilename(fileName);
+		} else {
+			name = encodingFilename(fileName);
+		}
 
 		if (!name.contains(".") && StringUtils.isEmpty(extension)) {
 			extension = MimeTypeUtils.IMAGE_JPEG;
 		}
-		if (StringUtils.isNotEmpty(extension)) {
+		if (StringUtils.isNotEmpty(extension) && !name.endsWith(extension)) {
 			return name + "." + extension;
 		}
 		return name;

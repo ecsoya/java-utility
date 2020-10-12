@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>io.github.ecsoya</groupId>
 		<artifactId>java-uploader</artifactId>
-		<version>0.0.1-SNAPSHOT</version>
+		<version>0.0.2-SNAPSHOT</version>
 	</parent>
 	<artifactId>java-uploader-common</artifactId>
 	<name>java-uploader-common</name>
