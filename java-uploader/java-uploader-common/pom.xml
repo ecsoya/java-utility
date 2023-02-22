@@ -12,7 +12,7 @@
 
 	<properties>
 		<commons.io.version>2.6</commons.io.version>
-		<commons.fileupload.version>1.4</commons.fileupload.version>
+		<commons.fileupload.version>1.5</commons.fileupload.version>
 	</properties>
 	<dependencies>
 		<dependency>
